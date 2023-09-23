@@ -2,5 +2,30 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "assadfasdsdf.com"
+    "email": "assad3fas2@dsdf.com",
+    "password" : "234234324wdsf"
 }
+
+###
+
+GET http://localhost:3000/auth/53434
+
+###
+
+GET http://localhost:3000/auth?email=assad3fas2@dsdf.com
+
+### 
+
+DELETE  http://localhost:3000/auth/3
+
+### 
+
+PATCH  http://localhost:3000/auth/5
+Content-Type: application/json
+
+{
+    "email": "a@dAf.com",
+    "password" : "AA"
+}
+
+
