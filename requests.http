@@ -2,13 +2,29 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "assad3fas2@dsdf.com",
-    "password" : "234234324wdsf"
+    "email": "test2@test.com",
+    "password" : "12345678"
 }
+
+####
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "test1@test.com",
+    "password" : "12345678"
+}
+####
+GET http://localhost:3000/auth/whoami
+Content-Type: application/json
+####
+POST http://localhost:3000/auth/signout
+
+
 
 ###
 
-GET http://localhost:3000/auth/53434
+GET http://localPhost:3000/auth/53434
 
 ###
 
