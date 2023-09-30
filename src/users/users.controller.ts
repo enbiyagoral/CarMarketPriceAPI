@@ -7,8 +7,6 @@ import { Body,
   Param, 
   Query, 
   NotFoundException, 
-  UseInterceptors, 
-  ClassSerializerInterceptor,
   Session
 } from '@nestjs/common';
 import { CreateUserDto } from './dtos/create-user.dto';
@@ -52,7 +50,6 @@ export class UsersController {
 
     @Get(':id')
     async findUser(@Param('id') id:string){
-      console.log("handler is running");
       const user = await this.usersService.findOne(parseInt(id))
       if(!user){
         throw new NotFoundException('User not found');

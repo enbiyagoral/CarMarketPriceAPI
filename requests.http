@@ -24,7 +24,7 @@ POST http://localhost:3000/auth/signout
 
 ###
 
-GET http://localPhost:3000/auth/53434
+GET http://localhost:3000/auth/6
 
 ###
 
