@@ -15,6 +15,7 @@ export class User{
     @Column()
     password: string;
 
+    
     @AfterInsert()
     logInsert(){
         console.log("Insert to database who has id: ", this.id);
