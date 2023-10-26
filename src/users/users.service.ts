@@ -21,7 +21,7 @@ export class UsersService {
     
     
 
-    find(email: string): Promise<User[]> {
+    async find(email: string): Promise<User[]> {
         return this.repo.find({ where: { email } });
     }
 

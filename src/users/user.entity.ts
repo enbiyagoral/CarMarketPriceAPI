@@ -5,8 +5,7 @@ import {
     Entity, 
     Column, 
     PrimaryGeneratedColumn,
-    OneToMany
-
+    OneToMany,
 }  from 'typeorm';
 
 import { Report  } from 'src/reports/report.entity';
@@ -19,9 +18,11 @@ export class User{
     @Column()
     email: string;
 
-    // @Exclude()
     @Column()
     password: string;
+
+    @Column({default:true})
+    admin: boolean;
 
     @OneToMany(() => Report, (report)=> report.user)
     reports: Report[];
